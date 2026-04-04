@@ -69,23 +69,27 @@ export default function About() {
           </div>
 
           <div>
-            <h2 className="text-3xl md:text-5xl font-medium mb-8 uppercase tracking-tight">
-              Master the art of{" "}
-              <span className="italic-serif text-lime-600 dark:text-lime-400">
-                persuasion
-              </span>
-              .
-            </h2>
+             <h2 className="text-3xl md:text-5xl font-medium mb-8 uppercase tracking-tight">
+                Master the art of <span className="italic-serif text-lime-600 dark:text-lime-400">persuasion</span>.
+              </h2>
 
-            <p className="text-lg mb-8">
-              PitchCraft is your ultimate AI-powered companion for public
-              speaking and project pitching.
-            </p>
+            <p className="text-[var(--text-muted)] text-lg leading-relaxed mb-8 font-light">
+                PitchCraft is your ultimate AI-powered companion for public speaking and project pitching. We bridge the gap between complex technical documentation and a compelling, audience-tailored narrative.
+              </p>
+              <p className="text-[var(--text-muted)] text-lg leading-relaxed mb-8 font-light">
+                Whether you're facing a room of investors, non-technical executives, or the general public, our platform equips you with the exact words, timing, and confidence you need to win the room.
+              </p>
 
             <div className="flex gap-4">
-              <Sparkles />
-              <Target />
-              <Users />
+              <div className="flex items-center gap-2 text-sm font-medium uppercase tracking-widest text-lime-600 dark:text-lime-400">
+                  <Sparkles className="w-5 h-5" /> AI Strategy
+                </div>
+             <div className="flex items-center gap-2 text-sm font-medium uppercase tracking-widest text-green-600 dark:text-green-400">
+                  <Target className="w-5 h-5" /> Practice Studio
+                </div>
+             <div className="flex items-center gap-2 text-sm font-medium uppercase tracking-widest text-teal-600 dark:text-teal-400">
+                  <Users className="w-5 h-5" /> Community
+                </div>
             </div>
           </div>
         </div>

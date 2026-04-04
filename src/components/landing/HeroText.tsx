@@ -51,7 +51,7 @@ export default function HeroText({ setActiveVideo }: Props) {
         transition={{ delay: 1.5, duration: 1 }}
         className="flex flex-col sm:flex-row gap-6 mt-12 relative z-20"
       >
-        <Link to="/app" className="glass-button-primary">
+        <Link to="/app/dashboard" className="glass-button-primary">
           GET STARTED <ArrowRight className="w-4 h-4" />
         </Link>
         <button

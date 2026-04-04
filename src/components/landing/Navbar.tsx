@@ -30,7 +30,7 @@ export default function Navbar({ isDark, toggleTheme, onContact }: Props) {
           {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
         </button>
 
-        <Link to="/app" className="glass-button-primary !py-3 !px-6">
+        <Link to="/app/dashboard" className="glass-button-primary !py-3 !px-6">
           GET STARTED
         </Link>
       </nav>
@@ -40,7 +40,7 @@ export default function Navbar({ isDark, toggleTheme, onContact }: Props) {
           {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
         </button>
 
-        <Link to="/app" className="glass-button-primary !py-2 !px-4 !text-[10px]">
+        <Link to="/app/dashboard" className="glass-button-primary !py-2 !px-4 !text-[10px]">
           GET STARTED
         </Link>
       </div>
