@@ -1,10 +1,10 @@
 // types.ts
-import { Icon } from 'lucide-react';
+import { LucideIcon } from "lucide-react";
 
 export interface DashboardCardProps {
   title: string;
   description: string;
-  icon: Icon;
+  icon: LucideIcon;
   to: string;
   color: string;
   bg: string;

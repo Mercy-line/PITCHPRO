@@ -1,6 +1,6 @@
 // data.ts
 import { Sparkles, Mic, BookOpen, PlayCircle } from 'lucide-react';
-import { DashboardCardProps } from './types';
+import { DashboardCardProps } from '@/types/dashboard';
 
 export const dashboardCards: DashboardCardProps[] = [
   {
@@ -37,7 +37,7 @@ export const dashboardCards: DashboardCardProps[] = [
   },
 ];
 
-export const whyPitchCraftPoints: string[] = [
+export const whyPitchProPoints: string[] = [
   'Understand complex systems in minutes',
   'Get catchy introductions tailored to your audience',
   'Learn the dos and don\'ts with concrete examples',

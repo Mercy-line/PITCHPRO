@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --bg-base: #0a0a0a;
+  --bg-card: rgba(25, 25, 25, 0.6);
+  --text-main: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --border: rgba(255, 255, 255, 0.1);
+  --border-subtle: rgba(255, 255, 255, 0.05);
+  --accent: #84cc16;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--bg-base)] text-[var(--text-main)];
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-[var(--bg-card)] backdrop-blur-md border border-[var(--border)] rounded-2xl;
+  }
+
+  .glass-card {
+    @apply bg-[var(--bg-card)] backdrop-blur-sm border border-[var(--border)] rounded-xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(132,204,22,0.05)];
+  }
+
+  .glass-button-primary {
+    @apply flex items-center gap-2 px-8 py-4 bg-lime-600/90 hover:bg-lime-500 text-white font-medium rounded-xl transition-all duration-300 backdrop-blur-sm uppercase tracking-widest text-sm shadow-[0_0_20px_rgba(132,204,22,0.2)];
+  }
+
+  .italic-serif {
+    font-style: italic;
+    font-family: serif;
+  }
+}
