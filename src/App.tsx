@@ -10,6 +10,9 @@ import PitchPrep from '@/pages/PitchPrep';
 import Learn from '@/pages/Learn';
 import PracticeStudio from '@/pages/PracticeStudio';
 
+// Layout
+import AppLayout from '@/components/layout/AppLayout';
+
 
 
 function App() {
@@ -24,12 +27,15 @@ function App() {
         {/* Routes */}
         <Routes>
           <Route path="/" element={<Landing/>}/>
-          <Route path="/app" element={<Dashboard />} />
-          <Route path="/app/dashboard" element={<Dashboard />} />
-          <Route path="/app/community" element={<Community />} />
-          <Route path="/app/pitchprep" element={<PitchPrep />} />
-          <Route path="/app/learn" element={<Learn />} />
-          <Route path="/app/practice" element={<PracticeStudio />} />
+          
+          <Route path="/app" element={<AppLayout />}>
+            <Route index element={<Dashboard />} />
+            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="community" element={<Community />} />
+            <Route path="pitchprep" element={<PitchPrep />} />
+            <Route path="learn" element={<Learn />} />
+            <Route path="practice" element={<PracticeStudio />} />
+          </Route>
         </Routes>
 
       </div>
