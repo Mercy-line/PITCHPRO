@@ -3,7 +3,7 @@ import { Target, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { whyPitchProPoints } from '@/data/dashboard';
 
-export function WhyPitchPro({ item }: { item: any }) {
+export default function WhyPitchPro({ item }: { item: any }) {
   return (
     <motion.div variants={item} className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
       
@@ -35,7 +35,7 @@ export function WhyPitchPro({ item }: { item: any }) {
             Start by pasting your project documentation and let our AI Pro the perfect pitch strategy for you.
           </p>
           <Link 
-            to="/app/prep" 
+            to="/app/pitchprep" 
             className="glass-button-primary inline-flex w-max"
           >
             START PITCH PREP

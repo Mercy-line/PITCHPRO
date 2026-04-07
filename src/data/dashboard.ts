@@ -7,7 +7,7 @@ export const dashboardCards: DashboardCardProps[] = [
     title: "PITCH PREP",
     description: "AI-powered pitch generator from your technical docs.",
     icon: Sparkles,
-    to: "/app/prep",
+    to: "/app/pitchprep",
     color: "text-lime-600 dark:text-lime-400",
     bg: "bg-lime-500/10",
   },

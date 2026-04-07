@@ -5,7 +5,12 @@ import { useTheme } from './hooks/useTheme';
 // Pages
 import Community from '@/pages/Community';
 import Dashboard from '@/pages/Dashboard';
-import Landing from './pages/Landing';
+import Landing from '@/pages/Landing';
+import PitchPrep from '@/pages/PitchPrep';
+import Learn from '@/pages/Learn';
+import PracticeStudio from '@/pages/PracticeStudio';
+
+
 
 function App() {
   // Call useTheme at the top level to handle the initial theme application
@@ -22,6 +27,9 @@ function App() {
           <Route path="/app" element={<Dashboard />} />
           <Route path="/app/dashboard" element={<Dashboard />} />
           <Route path="/app/community" element={<Community />} />
+          <Route path="/app/pitchprep" element={<PitchPrep />} />
+          <Route path="/app/learn" element={<Learn />} />
+          <Route path="/app/practice" element={<PracticeStudio />} />
         </Routes>
 
       </div>

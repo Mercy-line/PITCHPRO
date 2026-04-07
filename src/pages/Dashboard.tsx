@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useDashboardAnimation } from "@/hooks/useDashboard";
 import DashboardHeader from "@/components/dashboard/DashboardHeader";
 import DashboardCards from "@/components/dashboard/DashboardCards";
-import { WhyPitchPro } from "@/components/dashboard/WhyPitchPro";
+import WhyPitchPro from "@/components/dashboard/WhyPitchPro";
 
 export default function Dashboard() {
   const { container, item } = useDashboardAnimation();
