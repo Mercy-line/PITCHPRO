@@ -53,6 +53,7 @@ export default function Sidebar({ navItems, isDark, onToggleTheme, onLogout }: S
           onClick={onLogout}
           className="flex items-center gap-4 text-[var(--text-muted)] hover:text-red-500 font-medium text-xs tracking-widest uppercase transition-colors w-full"
         >
+          
           <LogOut className="w-5 h-5" />
           LOGOUT
         </button>

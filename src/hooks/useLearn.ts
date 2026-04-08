@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { jsPDF } from 'jspdf';
-import { Book, Exercise, Game } from '../types/learn';
+import { Book, Game } from '../types/learn';
 import { books, exercises, tongueTwisters } from '../data/learn';
 
 export const useLearn = () => {

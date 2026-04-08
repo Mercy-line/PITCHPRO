@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Play, ArrowRight } from "lucide-react";
 
@@ -7,7 +7,7 @@ interface Props {
 }
 
 export default function HeroText({ setActiveVideo }: Props) {
-  const wordVariants = {
+  const wordVariants: Variants = {
     hidden: { opacity: 0, y: 50 },
     visible: (i: number) => ({
       opacity: 1,
@@ -15,7 +15,7 @@ export default function HeroText({ setActiveVideo }: Props) {
       transition: {
         delay: i * 0.15,
         duration: 0.8,
-        ease: [0.2, 0.65, 0.3, 0.9],
+        ease: [0.2, 0.65, 0.3, 0.9] as const,
       },
     }),
   };
