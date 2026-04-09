@@ -25,6 +25,7 @@
 @layer base {
   body {
     @apply bg-[var(--bg-base)] text-[var(--text-main)];
+    font-family: 'Lora', serif;
   }
 }
 
@@ -47,6 +48,6 @@
 
   .italic-serif {
     font-style: italic;
-    font-family: serif;
+    font-family: 'Lora', serif;
   }
 }
